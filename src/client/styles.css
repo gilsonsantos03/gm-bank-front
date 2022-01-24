@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{  text-decoration: none; 
+    cursor: pointer;    
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100%;
+    font-size: 1.6rem;
+}
+
+._container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    height: 70%;
+    width: 90%;
+    
+}   
+
+._form-container{
+    flex:2;
+    height:100%;
+    max-height: 100%;
+    padding: 4rem ;     
+}
+
+h1._form-title{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+._field{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 1.6rem;
+}
+
+._field label{
+    font-weight: bold;
+    font-size: 1.6rem;
+
+}
+
+._field input{
+    height: 5rem;
+    width: 100%;
+    margin-top:0.8rem;
+    border:solid 1px #e5e5e5;
+    border-radius:0.4rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+button._submit-button{
+    background-color: #003142;
+    height: 5rem;
+    width: 100%;
+    color: #fff;
+    border: none;
+    border-radius:0.4rem;
+    margin: 2rem 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+button._submit-button:hover{
+    opacity: 0.8;
+}
+
+@media (max-width: 1063px){
+
+    html{
+        font-size: 35%;
+    }
+    ._container{
+        flex-direction: column;
+        width: 80%;
+        height: 80%;
+ 
+    }
+
+    ._form-container{
+        width: 100%;
+        height: 50%;
+        max-height: 100%;
+    }
+}
