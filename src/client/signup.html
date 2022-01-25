@@ -22,23 +22,23 @@
                     </legend>
                     <div id="name" class="_field">
                         <label for="name">Nome</label>
-                        <input placeholder="Digite o seu nome" type="text" id="name" name="name">
+                        <input placeholder="Digite o seu nome" type="text" id="name" name="name" required>
                     </div>                  
                     <div id="email" class="_field">
                         <label for="email">Email</label>
-                        <input placeholder="rafael@example.com" type="text" id="email" name="email">
+                        <input placeholder="rafael@example.com" type="text" id="email" name="email" required>
                     </div>
                     <div id="password" class="_field"> 
                         <label for="password">Senha</label>
-                        <input type="text" placeholder="Digite a sua senha" id="password" name="password">
+                        <input type="text" placeholder="Digite a sua senha" type="password" minlength="6" id="password" name="password" required>
                     </div>
-                    <button class="_submit-button">
+                    <button id="register_button" class="_submit-button">
                         Criar conta
                     </button>
                 </form>
             </div>
         </div>
     </main>
-    <script src="signup.js"></script>
+    <script src="signup.js" type="module"></script>
 </body>
 </html>
